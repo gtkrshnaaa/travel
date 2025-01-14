@@ -431,13 +431,13 @@ header{
     background-repeat: no-repeat;
 }
 .home__slide.slide__1{
-    background-image: url(/assets/Images/slide-bg-1.jpg);
+    background-image: url(assets/images/slide-bg-1.jpg);
 }
 .home__slide.slide__2{
-    background-image: url(/assets/Images/slide-bg-2.jpg);
+    background-image: url(assets/images/slide-bg-2.jpg);
 }
 .home__slide.slide__3{
-    background-image: url(/assets/Images/slide-bg-3.jpg);
+    background-image: url(assets/images/slide-bg-3.jpg);
 }
 .overlay{
     position: absolute;
@@ -764,7 +764,7 @@ select:focus-visible{
 
 /* ========== GALLERY ========== */
 #gallery{
-    background: url(/assets/Images/gallery-bg.jpg);
+    background: url(assets/images/gallery-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -834,7 +834,7 @@ select:focus-visible{
 #blogs{
     position: relative;
     min-height: 150vh;
-    background-image: url(/assets/Images/blog-bg.jpg);
+    background-image: url(assets/images/blog-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
