@@ -1,818 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travelo</title>
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
-
-    <!--=============== FONT AWESOME ICONS ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-
-    <!--=============== OWL CAROUSEL ===============-->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4assets/owl.carousel.min.css" />
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4assets/owl.theme.default.min.css" />
-
-    <!--=============== LIGHT GALLERY ===============-->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
-
-    <!--=============== AOS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-</head>
-
-<body>
-
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-
-        <!-- HEADER TOP -->
-        <div class="header__top">
-            <div class="contact__details">
-                <a href="tel:0000000000" class="contact__number">+1 1235 6789 10</a>
-                <a href="mailto:info@hellodigi.ru" class="contact__email">
-                    info@hellodigi.ru
-                </a>
-            </div>
-            <ul class="header__social__links">
-                <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                <li><a href="#"><i class="bx bxl-pinterest-alt"></i></a></li>
-                <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Travel.</title>
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__logo"><a href="#">Travel.</a></div>
+          <ul class="nav__links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About Us</a></li>
+            <li class="link"><a href="#discover">Discover</a></li>
+            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link"><a href="#journals">Journals</a></li>
+            <li class="link"><a href="#gallery">Gallery</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+            <li class="link search">
+              <span><i class="ri-search-line"></i></span>
+            </li>
+          </ul>
         </div>
-
-        <!-- NAVBAR -->
-        <div id="nav__wrapper" class="nav__wrapper">
-            <nav class="nav">
-                <a href="#" class="nav__logo">Travelo</a>
-
-                <!-- NAV MENU -->
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item ">
-                            <a href="#home" class="nav__link active">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#destinations" class="nav__link">Destinations</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#tours" class="nav__link">Tour</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#gallery" class="nav__link">Gallery</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#blogs" class="nav__link">Blogs</a>
-                        </li>
-                    </ul>
-
-                    <!-- NAV CLOSE -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="bx bx-x"></i>
-                    </div>
-
-                </div>
-
-                <!-- SEARCH ICON -->
-                <div class="nav__search" id="nav-search">
-                    <i class="bx bx-search"></i>
-                </div>
-                <!-- NAV TOGGLE -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-menu"></i>
-                </div>
-            </nav>
-        </div>
-
+      </nav>
+      <div class="section__container header__container">
+        <h1>The new way to plan your next adventure</h1>
+        <h4>Explore the colourful world</h4>
+        <button class="btn">
+          Explore More <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
     </header>
-    <!--==================== HEADER END ====================-->
 
-
-    <!--==================== SEARCH BAR ====================-->
-    <div id="search-bar" class="search__bar__wrapper">
-        <form class="search__bar">
-            <input type="text" placeholder="Search..." required>
-            <button type="submit" class="search__submit bx bx-search"></button>
-            <i id="search-close" class="search__close bx bx-x"></i>
-        </form>
-    </div>
-
-
-    <!--==================== HOME ====================-->
-    <section id="home">
-
-        <div class="wrapper">
-
-            <!-- HOME CAROUSEL -->
-            <div id="home-carousel" class="home-carousel owl-carousel owl-theme">
-
-                <!--====================== Slide 1 ======================-->
-                <div class="home__slide slide__1">
-                    <div class="overlay"></div>
-                    <div class="home__slide__content">
-                        <h1 class="heading__text">New Zealand</h1>
-                        <p class="home__slide__desc">
-                            Let's find the best travel destination for you
-                        </p>
-                        <div>
-                            <button class="btn btn__1">Want a personal tour</button>
-                            <button class="btn btn__2 light">Choose tour</button>
-                            <button class="carousel__next__btn carousel__btn light" data-target="#home-carousel">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--====================== Slide 2 ======================-->
-                <div class="home__slide slide__2">
-                    <div class="overlay"></div>
-                    <div class="home__slide__content">
-                        <h1 class="heading__text">Koyto, Japan</h1>
-                        <p class="home__slide__desc">
-                            Let's find the best travel destination for you
-                        </p>
-                        <div>
-                            <button class="btn btn__1">Want a personal tour</button>
-                            <button class="btn btn__2 light">Choose tour</button>
-                            <button class="carousel__next__btn carousel__btn light" data-target="#home-carousel">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--====================== Slide 3 ======================-->
-                <div class="home__slide slide__3">
-                    <div class="overlay"></div>
-                    <div class="home__slide__content">
-                        <h1 class="heading__text">The Great Outdoors</h1>
-                        <p class="home__slide__desc">
-                            Let's find the best travel destination for you
-                        </p>
-                        <div>
-                            <button class="btn btn__1">Want a personal tour</button>
-                            <button class="btn btn__2 light">Choose tour</button>
-                            <button class="carousel__next__btn carousel__btn light" data-target="#home-carousel">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__content">
+          <h2 class="section__header">About us</h2>
+          <p class="section__subheader">
+            Our mission is to ignite the spirit of discovery in every traveler's
+            heart, offering meticulously crafted itineraries that blend
+            adrenaline-pumping activities with awe-inspiring landscapes. With a
+            team of seasoned globetrotters, we ensure that every expedition is
+            infused with excitement, grace our planet. Embark on a voyage of a
+            lifetime with us, as we redefine the art of exploration.
+          </p>
+          <div class="about__flex">
+            <div class="about__card">
+              <h4>268</h4>
+              <p>Completed Trips</p>
             </div>
-
-
-
-        </div>
-
-        <!-- Home Destination Card -->
-        <div class="best__destination" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="center-bottom" data-aos-delay="2000">
-            <i class="bx bxs-map"></i>
-            <p>The most popular destination this year - Thailand
-            </p>
-        </div>
-
-    </section>
-    <!--==================== HOME END ====================-->
-
-
-    <!--==================== DESTINATIONS ====================-->
-    <section id="destinations" class="section__padding">
-        <div class="wrapper">
-
-            <!-- SECTION TOP -->
-            <div class="section__top">
-                <div class="section__heading">
-                    <p class="section__subtitle">Popularly</p>
-                    <h2 class="section__title light">Most popular<br>holiday destinations</h2>
-                </div>
-
-                <!-- Buttons -->
-                <div class="button__wrapper">
-                    <div class="carousel__buttons">
-                        <div class="carousel__prev__btn carousel__btn light" data-target="#destination-carousel">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </div>
-                        <div class="carousel__next__btn carousel__btn light" data-target="#destination-carousel">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <button class="btn btn__2 light">View all tours</button>
-                </div>
+            <div class="about__card">
+              <h4>176</h4>
+              <p>Tour Guides</p>
             </div>
-
-            <!-- Destination Carousel -->
-            <div id="destination-carousel" class="destination-carousel owl-carousel owl-theme" data-aos="fade-right" data-aos-duration="1000" >
-
-                <!--==================== DESTINATION SLIDE 1 ===================-->
-                <div class="destination__slide">
-                    <div class="overlay"></div>
-                    <img src="assets/images/dest-1.jpg" alt="dest-img-1">
-                    <div class="tag__list">
-                        <div class="tags discount">20% off</div>
-                        <div class="tags new">new</div>
-                    </div>
-                    <div class="content">
-                        <div class="rating">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star inactive"></i>
-                            <span>(2 Reviews)</span>
-                        </div>
-                        <h3 class="title">Autumn in Japan | $3,500 $3,880</h3>
-                        <p class="description">
-                            6 excursions to the main cities of the country, admire the beautiful autumn gardens
-                        </p>
-                        <div class="time">
-                            <i class="fa-regular fa-clock clock"></i>
-                            <span class="days">7 days</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== DESTINATION SLIDE 2 ===================-->
-                <div class="destination__slide">
-                    <div class="overlay"></div>
-                    <img src="assets/images/dest-2.jpg" alt="dest-img-2">
-                    <div class="tag__list">
-                        <div class="tags discount">20% off</div>
-                    </div>
-                    <div class="content">
-                        <div class="rating">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star inactive"></i>
-                            <span>(2 Reviews)</span>
-                        </div>
-                        <h3 class="title">A tour of the Islands</h3>
-                        <p class="description">
-                            6 excursions to the main cities of the country, admire the beautiful autumn gardens
-                        </p>
-                        <div class="time">
-                            <i class="fa-regular fa-clock clock"></i>
-                            <span class="days">7 days</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== DESTINATION SLIDE 3 ===================-->
-                <div class="destination__slide">
-                    <div class="overlay"></div>
-                    <img src="assets/images/dest-3.jpg" alt="dest-img-3">
-                    <div class="tag__list">
-                        <div class="tags discount">20% off</div>
-                    </div>
-                    <div class="content">
-                        <div class="rating">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star inactive"></i>
-                            <span>(2 Reviews)</span>
-                        </div>
-                        <h3 class="title">Seychelles | $3,500 $3,880</h3>
-                        <p class="description">
-                            6 excursions to the main cities of the country, admire the beautiful autumn gardens
-                        </p>
-                        <div class="time">
-                            <i class="fa-regular fa-clock clock"></i>
-                            <span class="days">7 days</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== DESTINATION SLIDE 4 ===================-->
-                <div class="destination__slide">
-                    <div class="overlay"></div>
-                    <img src="assets/images/dest-4.jpg" alt="dest-img-4">
-                    <div class="tag__list">
-                    </div>
-                    <div class="content">
-                        <div class="rating">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star inactive"></i>
-                            <span>(2 Reviews)</span>
-                        </div>
-                        <h3 class="title">Autumn in Japan | $3,500 $3,880</h3>
-                        <p class="description">
-                            6 excursions to the main cities of the country, admire the beautiful autumn gardens
-                        </p>
-                        <div class="time">
-                            <i class="fa-regular fa-clock clock"></i>
-                            <span class="days">7 days</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== DESTINATION SLIDE 5 ===================-->
-                <div class="destination__slide">
-                    <div class="overlay"></div>
-                    <img src="assets/images/dest-5.jpg" alt="dest-img-5">
-                    <div class="tag__list">
-                        <div class="tags new">new</div>
-                    </div>
-                    <div class="content">
-                        <div class="rating">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star inactive"></i>
-                            <span>(2 Reviews)</span>
-                        </div>
-                        <h3 class="title">A tour of the Islands</h3>
-                        <p class="description">
-                            6 excursions to the main cities of the country, admire the beautiful autumn gardens
-                        </p>
-                        <div class="time">
-                            <i class="fa-regular fa-clock clock"></i>
-                            <span class="days">7 days</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="about__card">
+              <h4>153</h4>
+              <p>Destinations</p>
             </div>
-
+          </div>
+          <button class="btn">
+            Read More <i class="ri-arrow-right-line"></i>
+          </button>
         </div>
-    </section>
-    <!--==================== DESTINATIONS END ====================-->
-
-
-    <!--==================== SEARCH BOX ====================-->
-    <section class="search__tour">
-
-        <div class="search__tour__wrapper"  data-aos="fade-up" data-aos-duration="1000" >
-
-            <!-- SECTION HEADING -->
-            <div class="section__heading">
-                <p class="section__subtitle">Search Tour</p>
-                <h2 class="section__title dark">
-                    Ready to rest? We are ready to help with the search
-                </h2>
-            </div>
-
-            <!-- SEARCH FORM -->
-            <form action="#" class="feilds">
-                <div class="feild__item">
-                    <label for="destination" class="feild__label">Destination</label>
-                    <div class="feild__input">
-                        <input type="text" placeholder="Where to?" required>
-                        <i class="bx bx-search"></i>
-                    </div>
-                </div>
-                <div class="feild__item">
-                    <label for="date" class="feild__label">Date</label>
-                    <div class="feild__input">
-                        <input type="date" required>
-                    </div>
-                </div>
-                <div class="feild__item">
-                    <label for="persons" class="feild__label">Persons</label>
-                    <div class="feild__input">
-                        <input type="text" placeholder="1 Person" required>
-                        <i class="bx bx-user"></i>
-                    </div>
-                </div>
-                <div class="feild__item">
-                    <label for="travel" class="feild__label">Travel Type</label>
-                    <div class="feild__select">
-                        <select name="Travel Type">
-                            <option value="city">City Tour</option>
-                            <option value="city">Adventure</option>
-                            <option value="city">Seasonal Tour</option>
-                            <option value="city">Hike</option>
-                            <option value="city">Wildlife</option>
-                            <option value="city">Cultural Tour</option>
-                            <option value="city">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn__1">
-                    <i class="bx bx-search"></i>
-                </button>
-            </form>
-
+        <div class="about__image">
+          <img src="assets/about.jpg" alt="about" />
         </div>
-
+      </div>
     </section>
 
-
-    <!--==================== TOURS ====================-->
-    <section id="tours" class="section__padding">
-
-        <div class="wrapper">
-
-            <!-- SECTION TOP -->
-            <div class="section__top">
-                <div class="section__heading">
-                    <p class="section__subtitle">Packages</p>
-                    <h2 class="section__title dark">Our Best Tour Packages</h2>
-                </div>
-
-                <!-- Buttons -->
-                <div class="button__wrapper">
-                    <div class="carousel__buttons">
-                        <div class="carousel__prev__btn carousel__btn dark" data-target="#tour-carousel">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </div>
-                        <div class="carousel__next__btn carousel__btn dark" data-target="#tour-carousel">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <button class="btn btn__2 dark">View all tours</button>
-                </div>
+    <section class="discover" id="discover">
+      <div class="section__container discover__container">
+        <h2 class="section__header">Discover the most engaging places</h2>
+        <p class="section__subheader">
+          Let's see the world with us with you and your family.
+        </p>
+        <div class="discover__grid">
+          <div class="discover__card">
+            <div class="discover__image">
+              <img src="assets/discover-1.jpg" alt="discover" />
             </div>
-
-            <!-- Tour Carousel -->
-            <div id="tour-carousel" class="tour-carousel owl-carousel owl-theme"  data-aos="fade-right" data-aos-duration="1000" >
-
-                <!--==================== TOUR ITEM 1 ====================-->
-                <div class="tour__item">
-                    <div class="img__box">
-                        <img src="assets/images/tour-1.jpg" alt="#">
-                    </div>
-                    <div class="tour__item__content">
-                        <div class="tour__details">
-                            <a href="#" class="tour__name">Eastern Desert</a>
-                            <div class="rating">5.0 <i class="bx bxs-star"></i></div>
-                        </div>
-                        <p class="desc">Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus
-                            varius blandit sit amet non magna.</p>
-                        <div class="tour__details">
-                            <div class="location">
-                                <i class="bx bxs-map"></i>
-                                <p>Egypt</p>
-                            </div>
-                            <div class="price">
-                                <i class="bx bx-dollar"></i>
-                                <p>150 <span>/ package</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== TOUR ITEM 2 ====================-->
-                <div class="tour__item">
-                    <div class="img__box">
-                        <img src="assets/images/tour-2.jpg" alt="#">
-                    </div>
-                    <div class="tour__item__content">
-                        <div class="tour__details">
-                            <a href="#" class="tour__name">Moscow Kremlin</a>
-                            <div class="rating">4.9 <i class="bx bxs-star"></i></div>
-                        </div>
-                        <p class="desc">Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus
-                            varius blandit sit amet non magna.</p>
-                        <div class="tour__details">
-                            <div class="location">
-                                <i class="bx bxs-map"></i>
-                                <p>Moscow</p>
-                            </div>
-                            <div class="price">
-                                <i class="bx bx-dollar"></i>
-                                <p>180 <span>/ package</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== TOUR ITEM 3 ====================-->
-                <div class="tour__item">
-                    <div class="img__box">
-                        <img src="assets/images/tour-3.jpg" alt="#">
-                    </div>
-                    <div class="tour__item__content">
-                        <div class="tour__details">
-                            <a href="#" class="tour__name">Lake Erie</a>
-                            <div class="rating">5.0 <i class="bx bxs-star"></i></div>
-                        </div>
-                        <p class="desc">Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus
-                            varius blandit sit amet non magna.</p>
-                        <div class="tour__details">
-                            <div class="location">
-                                <i class="bx bxs-map"></i>
-                                <p>Canada</p>
-                            </div>
-                            <div class="price">
-                                <i class="bx bx-dollar"></i>
-                                <p>150 <span>/ package</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== TOUR ITEM 4 ====================-->
-                <div class="tour__item">
-                    <div class="img__box">
-                        <img src="assets/images/tour-4.jpg" alt="#">
-                    </div>
-                    <div class="tour__item__content">
-                        <div class="tour__details">
-                            <a href="#" class="tour__name">London Bridge</a>
-                            <div class="rating">4.9 <i class="bx bxs-star"></i></div>
-                        </div>
-                        <p class="desc">Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus
-                            varius blandit sit amet non magna.</p>
-                        <div class="tour__details">
-                            <div class="location">
-                                <i class="bx bxs-map"></i>
-                                <p>England</p>
-                            </div>
-                            <div class="price">
-                                <i class="bx bx-dollar"></i>
-                                <p>220 <span>/ package</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== TOUR ITEM 5 ====================-->
-                <div class="tour__item">
-                    <div class="img__box">
-                        <img src="assets/images/tour-5.jpg" alt="#">
-                    </div>
-                    <div class="tour__item__content">
-                        <div class="tour__details">
-                            <a href="#" class="tour__name">Sun Temple</a>
-                            <div class="rating">5.0 <i class="bx bxs-star"></i></div>
-                        </div>
-                        <p class="desc">Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus
-                            varius blandit sit amet non magna.</p>
-                        <div class="tour__details">
-                            <div class="location">
-                                <i class="bx bxs-map"></i>
-                                <p>Odisha</p>
-                            </div>
-                            <div class="price">
-                                <i class="bx bx-dollar"></i>
-                                <p>150 <span>/ package</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== TOUR ITEM 6 ====================-->
-                <div class="tour__item">
-                    <div class="img__box">
-                        <img src="assets/images/tour-6.jpg" alt="#">
-                    </div>
-                    <div class="tour__item__content">
-                        <div class="tour__details">
-                            <a href="#" class="tour__name">New York</a>
-                            <div class="rating">5.0 <i class="bx bxs-star"></i></div>
-                        </div>
-                        <p class="desc">Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus
-                            varius blandit sit amet non magna.</p>
-                        <div class="tour__details">
-                            <div class="location">
-                                <i class="bx bxs-map"></i>
-                                <p>USA</p>
-                            </div>
-                            <div class="price">
-                                <i class="bx bx-dollar"></i>
-                                <p>150 <span>/ package</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="discover__card__content">
+              <h4>Norway</h4>
+              <p>
+                Discover the untamed beauty of Norway, a land where rugged
+                mountains, and enchanting northern lights paint a surreal
+                backdrop.
+              </p>
+              <button class="discover__btn">
+                Discover More <i class="ri-arrow-right-line"></i>
+              </button>
             </div>
-
+          </div>
+          <div class="discover__card">
+            <div class="discover__image">
+              <img src="assets/discover-2.jpg" alt="discover" />
+            </div>
+            <div class="discover__card__content">
+              <h4>London</h4>
+              <p>
+                From urban rock climbing to twilight cycling through royal
+                parks, London beckons adventure enthusiasts to embrace
+                opportunities.
+              </p>
+              <button class="discover__btn">
+                Discover More <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+          <div class="discover__card">
+            <div class="discover__image">
+              <img src="assets/discover-3.jpg" alt="discover" />
+            </div>
+            <div class="discover__card__content">
+              <h4>Japan</h4>
+              <p>
+                From scaling the iconic peaks of Mount Fuji to immersing in the
+                serenity, Japan offers adventurers a captivating cultural
+                treasures.
+              </p>
+              <button class="discover__btn">
+                Discover More <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
         </div>
-    </section>
-    <!--==================== TOUR END ====================-->
-
-
-
-    <!--==================== GALLERY ====================-->
-    <section id="gallery" class="section__padding">
-        <div class="wrapper"  data-aos="fade-up" data-aos-duration="1000">
-            <div class="section__top">
-
-                <!-- SECTION HEADING -->
-                <div class="section__heading">
-                    <p class="section__subtitle">GALLERY</p>
-                    <h2 class="section__title light">Photo's from travellers</h2>
-                </div>
-
-            </div>
-
-            <div class="gallery__wrapper section__content">
-
-                <!--========== GALLERY ITEM 1 ============-->
-                <a href="assets/images/gallery-1.jpg" class="gallery__item gallery__item__1">
-                    <img src="assets/images/gallery-1.jpg" alt="#">
-                    <div class="icon">
-                        <i class="bx bx-search"></i>
-                    </div>
-                </a>
-
-                <!--========== GALLERY ITEM 2 ============-->
-                <a href="assets/images/gallery-2.jpg" class="gallery__item gallery__item__2">
-                    <img src="assets/images/gallery-2.jpg" alt="#">
-                    <div class="icon">
-                        <i class="bx bx-search"></i>
-                    </div>
-                </a>
-
-                <!--========== GALLERY ITEM 3 ============-->
-                <a href="assets/images/gallery-3.jpg" class="gallery__item gallery__item__3">
-                    <img src="assets/images/gallery-3.jpg" alt="#">
-                    <div class="icon">
-                        <i class="bx bx-search"></i>
-                    </div>
-                </a>
-
-                <!--========== GALLERY ITEM 4 ============-->
-                <a href="assets/images/gallery-4.jpg" class="gallery__item gallery__item__4">
-                    <img src="assets/images/gallery-4.jpg" alt="#">
-                    <div class="icon">
-                        <i class="bx bx-search"></i>
-                    </div>
-                </a>
-
-                <!--========== GALLERY ITEM 5 ============-->
-                <a href="assets/images/gallery-5.jpg" class="gallery__item gallery__item__5">
-                    <img src="assets/images/gallery-5.jpg" alt="#">
-                    <div class="icon">
-                        <i class="bx bx-search"></i>
-                    </div>
-                </a>
-
-                <!--========== GALLERY ITEM 6 ============-->
-                <a href="assets/images/gallery-6.jpg" class="gallery__item gallery__item__6">
-                    <img src="assets/images/gallery-6.jpg" alt="#">
-                    <div class="icon">
-                        <i class="bx bx-search"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!--==================== GALLERY END ====================-->
-
-
-    <!--==================== BLOGS ====================-->
-    <section id="blogs" class="section__padding">
-        <div class="wrapper">
-            <div class="section__top">
-                <!-- SECTION HEADING -->
-                <div class="section__heading text__center">
-                    <p class="section__subtitle">BLOGS</p>
-                    <h2 class="section__title light">Travel Articles</h2>
-                    <p class="section__text">
-                        Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget
-                        risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum
-                        faucibus dolor auctor
-                    </p>
-                </div>
-            </div>
-
-            <div class="section__content">
-                <div class="blog__item__wrapper">
-
-                    <!--==================== BLOG ITEM 1 ====================-->
-                    <a href="#" class="blog__item"  data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-                        <article>
-                            <div class="blog__img">
-                                <img src="assets/images/blog_1.jpg" alt="#">
-                            </div>
-                            <div class="blog__content">
-                                <p class="blog__date">
-                                    JUNE 6/2022 | UNCATEGORIZED
-                                </p>
-                                <h4 class="blog__name">
-                                    Pack wisely before travelling
-                                </h4>
-                                <p class="blog__text">
-                                    A wonderful serenity has taken possession of my entire soul, like
-                                    these sweet mornings of spring which I enjoy with my whole heart.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <!--==================== BLOG ITEM 2 ====================-->
-                    <a href="#" class="blog__item" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-                        <article>
-                            <div class="blog__img">
-                                <img src="assets/images/blog_2.jpg" alt="#">
-                            </div>
-                            <div class="blog__content">
-                                <p class="blog__date">
-                                    SEPT 12/2022 | UNCATEGORIZED
-                                </p>
-                                <h4 class="blog__name">
-                                    Pack wisely before travelling
-                                </h4>
-                                <p class="blog__text">
-                                    A wonderful serenity has taken possession of my entire soul, like
-                                    these sweet mornings of spring which I enjoy with my whole heart.
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-
-                </div>
-                <div class="btn__wrapper">
-                    <button class="btn btn__2 light">View All Blogs</button>
-                </div>
-            </div>
-
-        </div>
+      </div>
     </section>
 
-    <!--==================== BLOGS END ====================-->
-
-    <!--==================== FOOTER ====================-->
-    <footer id="footer">
-
-        <!-- FOOTER TOP -->
-        <div class="footer__top">
-            <div class="brand__info col">
-                <a href="#" class="footer__logo">
-                    Travelo
-                </a>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove</p>
-                <ul class="social__links">
-                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                </ul>
+    <section class="blogs" id="blog">
+      <div class="blogs__container">
+        <h2 class="section__header">Latest on the blogs</h2>
+        <p class="section__subheader">We want to help youto travel better!</p>
+        <div class="blogs__grid">
+          <div class="blogs__card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <div class="blogs__content">
+              10 mistakes every first time traveller will make and how to avoid
+              them!
             </div>
-            <div class="col">
-                <h4>Address</h4>
-                <p>58 Ralph Ave<br>New York, New York 1111</p>
-                <p>P: +1 800 000 111<br>E: contact@example.com</p>
+          </div>
+          <div class="blogs__card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <div class="blogs__content">
+              What's it really like to move to a country where you don't speak
+              the language?
             </div>
-
-            <div class="col">
-                <h4>MORE INFO</h4>
-                <a href="#home">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#tours">Tours</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#blogs">Blogs</a>
+          </div>
+          <div class="blogs__card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <div class="blogs__content">
+              Exploring the quite corners of Oslo | Gallop around the globe.
             </div>
+          </div>
+          <div class="blogs__card">
+            <img src="assets/blog-4.jpg" alt="blog" />
+            <div class="blogs__content">
+              11 things to know before you visit rainbow mountain in Peru.
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Footer Bottom -->
-        <div class="footer__bottom">
-            <p>Copyright ©2022 All rights reserved</p>
+    <section class="journals" id="journals">
+      <div class="section__container journals__container">
+        <h2 class="section__header">The travel journals</h2>
+        <p class="section__subheader">
+          A journal is a place to record new things you have discovered while
+          exploring various places you visit.
+        </p>
+        <div class="journals__grid">
+          <div class="journals__card">
+            <img src="assets/journals-1.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-1.jpg" alt="author" />
+                <p>By Marry Ann</p>
+              </div>
+              <h4>How to use less plastic when you travel.</h4>
+              <div class="journals__footer">
+                <p>18 Apr 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-2.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-2.jpg" alt="author" />
+                <p>By Austin Martin</p>
+              </div>
+              <h4>The best weekend road trips from Denver.</h4>
+              <div class="journals__footer">
+                <p>22 Jun 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-3.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-3.jpg" alt="author" />
+                <p>By Anina Joseph</p>
+              </div>
+              <h4>Tips and tricks to plan your next adventure.</h4>
+              <div class="journals__footer">
+                <p>05 Sep 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-4.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-4.jpg" alt="author" />
+                <p>By Jacob Fernandez</p>
+              </div>
+              <h4>A beginner's guide to hostel's.</h4>
+              <div class="journals__footer">
+                <p>14 Dec 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-5.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-5.jpg" alt="author" />
+                <p>By John Smith</p>
+              </div>
+              <h4>17 unconventional travel hacks you need.</h4>
+              <div class="journals__footer">
+                <p>10 Feb 2022</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="journals__card">
+            <img src="assets/journals-6.jpg" alt="journal" />
+            <div class="journals__content">
+              <div class="journals__author">
+                <img src="assets/author-6.jpg" alt="author" />
+                <p>By Aaran Kennedy</p>
+              </div>
+              <h4>Travel tip's you'll wish you'd known sooner.</h4>
+              <div class="journals__footer">
+                <p>20 Mar 2023</p>
+                <span>
+                  <a href="#"><i class="ri-share-fill"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="journals__btn">
+          <button class="btn">
+            View All Journals <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
-    </footer>
-    <!--==================== FOOTER END ====================-->
+    <section class="hero">
+      <div class="section__container hero__container">
+        <p>Travel.</p>
+      </div>
+    </section>
 
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <h2 class="section__header">Gallery photos</h2>
+        <p class="section__subheader">
+          Explore the most beautiful places in the world.
+        </p>
+        <div class="gallery__grid">
+          <div class="gallery__card">
+            <img src="assets/gallery-1.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Northern Lights</h4>
+              <p>Norway</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-2.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Krabi</h4>
+              <p>Thailand</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-3.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Bali</h4>
+              <p>Indonesia</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-4.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Tokyo</h4>
+              <p>Japan</p>
+            </div>
+          </div>
+          <div class="gallery__card">
+            <img src="assets/gallery-5.jpg" alt="gallery" />
+            <div class="gallery__content">
+              <h4>Taj Mahal</h4>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact" id="contact">
+      <div class="section__container contact__container">
+        <div class="contact__col">
+          <h4>Contact a travel researcher</h4>
+          <p>We always aim to reply within 24 hours.</p>
+        </div>
+        <div class="contact__col">
+          <div class="contact__card">
+            <span><i class="ri-phone-line"></i></span>
+            <h4>Call us</h4>
+            <h5>+91 9876543210</h5>
+            <p>We are online now</p>
+          </div>
+        </div>
+        <div class="contact__col">
+          <div class="contact__card">
+            <span><i class="ri-mail-line"></i></span>
+            <h4>Send us an enquiry</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="footer">
+      <div class="section__container footer__container">
+        <h4>Travel.</h4>
+        <div class="footer__socials">
+          <span>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </span>
+          <span>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </span>
+        </div>
+        <p>
+          Cheap Romantic Vacations. Many people feel that there is a limited
+          amount of abundance, wealth, or chance to succeed in life.
+        </p>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="#home">Home</a></li>
+          <li class="footer__link"><a href="#about">About</a></li>
+          <li class="footer__link"><a href="#discover">Discover</a></li>
+          <li class="footer__link"><a href="#blog">Blog</a></li>
+          <li class="footer__link"><a href="#journals">Journals</a></li>
+          <li class="footer__link"><a href="#gallery">Gallery</a></li>
+          <li class="footer__link"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2022 Travel. All rights reserved.
+      </div>
+    </section>
 
-
-    <!--==================== JQUERY ====================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!--==================== OWL CAROUSEL ====================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!--==================== LIGHT GALLERY ====================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-    <script>
-        lightGallery(document.querySelector('.gallery__wrapper'), {
-            download: false,
-            share: false,
-        })
-    </script>
-
-    <!--==================== AOS ====================-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-    <!--==================== JS ====================-->
-    <script src="assets/js/script.js"></script>
-
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
